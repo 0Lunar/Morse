@@ -14,7 +14,7 @@ void convert_to_morse(char string[100]){
     "-----", ".......", "--..--", ".-.-.-", "---...", "..--..", "-.-.--"};
    		int temp = 0;
     		for(int i = 0; i < strlen(string); i++){
-        		if(FRASE[i]  >= 'A' && string[i] <= 'Z'){
+        		if(string[i]  >= 'A' && string[i] <= 'Z'){
             		string[i] += 32;
         		}
         		temp = string[i] - 97;
