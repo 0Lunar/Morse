@@ -13,12 +13,10 @@ void convert_to_morse(char string[100]){
     "...--", "....-",   ".....",  "-....",  "--...",  "---..",  "----.",
     "-----", ".......", "--..--", ".-.-.-", "---...", "..--..", "-.-.--"};
    		int temp = 0;
-    		for(int i = 0; i < strlen(string); i++){
-        		if(string[i]  >= 'A' && string[i] <= 'Z'){
+        	if(string[i]  >= 'A' && string[i] <= 'Z'){
             		string[i] += 32;
-        		}
-        		temp = string[i] - 97;
-        		printf("%s ", MORSE_ALPHABET[temp]);
-    		}
+        	}
+        	temp = string[i] - 97;
+        	printf("%s ", MORSE_ALPHABET[temp]);
 	}
 }
