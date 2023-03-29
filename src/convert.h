@@ -18,7 +18,7 @@ void convert_to_morse(char string[100]){
     		printf("Inserisci la frase da convertire: ");
     		gets(FRASE);
     		for(int i = 0; i < strlen(FRASE); i++){
-        		if(FRASE[i]  >= 'A' && <= 'Z'){
+        		if(FRASE[i]  >= 'A' && FRASE[i] <= 'Z'){
             		FRASE[i] += 32;
         		}
         		temp = FRASE[i] - 97;
